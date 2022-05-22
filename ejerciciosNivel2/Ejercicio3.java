@@ -25,11 +25,12 @@ public class Ejercicio3 {
         }
         System.out.println("Baraja ordenada");
         System.out.println(cartas);
+        
         System.out.println("Baraja orden inverso");
         Collections.reverse(cartas);
         System.out.println(cartas);
-        System.out.println("Baraja mezclada al azar");
         
+        System.out.println("Baraja mezclada al azar");
         Collections.shuffle(cartas);
         System.out.println(cartas);
     }

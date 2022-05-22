@@ -21,7 +21,7 @@ public class Ejercicio2 {
             numeros.add(numero);
         }
         
-        ArrayList<Integer> numeros2 = (ArrayList<Integer>) numeros.clone();
+        ArrayList<Integer> numeros2 = (ArrayList<Integer>)numeros.clone();
 
         System.out.print("Ingrese número de inicio de la segunda lista: ");
         Integer numInicio = scan.nextInt();
