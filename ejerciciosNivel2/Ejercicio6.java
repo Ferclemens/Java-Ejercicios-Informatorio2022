@@ -15,16 +15,19 @@ Todos los empleados están cargados en un Set (HashSet), se desea calcular el su
 public class Ejercicio6 {
 
     public static void main(String[] args) {
+        //inciamos los objetos Empleado
         Empleado emp1 = new Empleado("Fernando Clemens", 34794429, 8, 400);
         Empleado emp2 = new Empleado("Roman Riquelme", 46874526, 6, 400);
         Empleado emp3 = new Empleado("Alf Melmac", 28774164, 8, 600);
-
+        
+        //agregamos los empleados al set
         Set<Empleado> equipo = new HashSet<>();
         equipo.add(emp1);
         equipo.add(emp2);
         equipo.add(emp3);
         
-        Map detalleEquipo = new HashMap<>();
+        //creamos un Hashmap de los empleados, con clave dni y valor sueldo
+        Map<Integer,Integer> detalleEquipo = new HashMap<>();
         equipo.forEach(emp -> {detalleEquipo.put(emp.dni, emp.Sueldo());});
 
         System.out.println(detalleEquipo);
@@ -44,7 +47,7 @@ public class Ejercicio6 {
             this.hsTrab = hsTrab;
             this.valorHora = valorHora;
         }
-
+        //funcion para calcular el sueldo
         public int Sueldo() {
             return(hsTrab * valorHora);
         }

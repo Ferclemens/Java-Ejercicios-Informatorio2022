@@ -43,10 +43,12 @@ public class Ejercicio4 {
         lista.add("Damian");
         lista.add("Marcelo");
 
+        //creamos los 3 cursos para distribuir los alumnos
         List<String> curso1 = new ArrayList<String>();
         List<String> curso2 = new ArrayList<String>();
         List<String> curso3 = new ArrayList<String>();
 
+        //distribuimos los alumnos utilizando sublist()
         curso1 = (List<String>)lista.subList(0, 4);
         curso2 = (List<String>)lista.subList(4, 8);
         curso3 = (List<String>)lista.subList(8, 12);

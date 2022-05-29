@@ -10,6 +10,7 @@ Crear un ArrayList, agregar 5 números enteros. Luego, agregar un número entero
 public class Ejercicio2 {
     public static void main(String[] args) {
         
+        //creamos un array para ingresar los valores de los 5 numeros enteros
         ArrayList<Integer> numeros = new ArrayList<Integer>();
 
         Scanner scan = new Scanner(System.in);
@@ -22,17 +23,21 @@ public class Ejercicio2 {
         }
         
         ArrayList<Integer> numeros2 = (ArrayList<Integer>)numeros.clone();
-
+        
+        //pedimos ingreso de numero de inicio de array
         System.out.print("Ingrese número de inicio de la segunda lista: ");
         Integer numInicio = scan.nextInt();
         numeros2.add(0,numInicio);
 
+        //pedimos ingreso de numero de cierre
         System.out.print("Ingrese número de final de la segunda lista: ");
         Integer numFinal = scan.nextInt();
         numeros2.add(numFinal);
 
+        //cerramos el Scanner
         scan.close();
-
+        
+        //imprimimos la lista de los primero 5 elementos ordenados segun ingreso y su tamaño total.
         int contador = 0;
         for (int i = 0; i < numeros.size(); i++) {
             contador += 1;
@@ -41,6 +46,7 @@ public class Ejercicio2 {
         }
         System.out.println("Tamaño de la primera lista " + numeros.size()+ " elementos.");
 
+        //imprimimos la lista de los elementos ordenados segun ingreso incluidos el numero de inicio y cierre. Mas su tamaño total.
         int contador2 = 0;
         for (int i = 0; i < numeros2.size(); i++) {
             contador2 += 1;

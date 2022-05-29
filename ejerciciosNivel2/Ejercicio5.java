@@ -7,6 +7,7 @@ Dados 2 ArrayList que contienen horas-trabajadas (array1) y valor-por-hora(array
 
 public class Ejercicio5 {
     public static void main(String[] args) {
+        //creamos array de horas trabajadas
         ArrayList<Integer> horas = new ArrayList<Integer>();
         horas.add(6);
         horas.add(7);
@@ -16,7 +17,7 @@ public class Ejercicio5 {
         System.out.println("Horas trabajadas por dia: ");
         System.out.println(horas);
 
-        
+        //creamos array de valor/hora trabajada
         ArrayList<Integer> valorHora = new ArrayList<Integer>();
         valorHora.add(350);
         valorHora.add(345);
@@ -27,7 +28,8 @@ public class Ejercicio5 {
         System.out.println(valorHora);
 
         ArrayList<Integer> suma = new ArrayList<Integer>();
-
+        
+        //logica para determinar el valor a pagar por dia trabajado (horas x valor hora) y el total de la semana (sumatoria de los 5 dias trabajados)
         int total = 0;
         for (int i = 0; i < horas.size(); i++){    
             int sumatoria = horas.get(i) * valorHora.get(i);
