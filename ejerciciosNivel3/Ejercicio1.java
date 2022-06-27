@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-
+        //creamos la lista de strings
         List<String> palabras = new ArrayList<>();
         palabras.add("Hola");
         palabras.add(null);
@@ -22,7 +22,7 @@ public class Ejercicio1 {
         List<String> listaLimpia = cleanList(palabras);
         System.out.println(listaLimpia);
     }
-
+    //funcion para limpiar lista de null y vacios
     public static List<String> cleanList(List<String> lista) {
         List<String> newList = lista.stream()
                 .filter(Objects::nonNull)
